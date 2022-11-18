@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 
 app.post('/', function (req, res) {
   console.log(req.body);
-  const moves = ['T', 'L', 'T','R','T','F'];
+  const moves = ['T', 'L', 'T', 'R', 'T', 'F', 'F'];
   
   // TODO add your implementation here to replace the random response
   
