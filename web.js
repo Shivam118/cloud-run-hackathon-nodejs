@@ -14,7 +14,9 @@ app.post('/', function (req, res) {
   
   // TODO add your implementation here to replace the random response
   
-  res.send(moves[Math.floor(Math.random() * moves.length)]);
+  moves.forEach((item)=> res.send(item));
+  
+//   res.send(moves[Math.floor(Math.random() * moves.length)]);
 });
 
 app.listen(process.env.PORT || 8080);
